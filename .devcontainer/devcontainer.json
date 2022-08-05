@@ -33,7 +33,7 @@
   "forwardPorts": [5173],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "cd App && pnpm i",
+  "postCreateCommand": "curl -fsSL https://starship.rs/install.sh | sh -s -- -y && cd App && pnpm i",
   // "postStartCommand": "cd App && pnpm run dev",
 
   "containerEnv": { "CHOKIDAR_USEPOLLING": "true" },
