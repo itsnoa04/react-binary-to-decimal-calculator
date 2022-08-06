@@ -5,7 +5,6 @@ This is a simple application that converts binary to decimal.
 ## Objectives ☑️
 
 - Create a react application
-- Understand basics of TDD and testing
 - Use redux for state management
 - Use tailwind for CSS
 - Use DevContainers for development
@@ -18,8 +17,6 @@ This is a simple application that converts binary to decimal.
 - TailwindCSS
 - Redux
 - React
-- jest
-- cypress
 - docker
 - devcontainers
 - Auto Animate

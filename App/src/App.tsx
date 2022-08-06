@@ -2,6 +2,7 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useId } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import InputSection from "./components/InputSection";
+import binaryToDecimal from "./lib/binaryToDecimal";
 import { updateValue } from "./slice/inputSlice";
 
 export interface AppProps {}
@@ -24,13 +25,14 @@ const App: React.FC<AppProps> = () => {
           label="ENTER BINARY"
         />
         <div
+          ref={mobileResultRef}
           className={`md:hidden bg-accent px-10 py-5 text-prime flex flex-col ${
             input_state.value === "" ? "hidden" : ""
           }`}
         >
           DECIMAL RESULT
           <span className="h-5" />
-          {input_state.value}
+          {binaryToDecimal(input_state.value)}
         </div>
       </div>
     </div>
