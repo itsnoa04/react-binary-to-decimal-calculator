@@ -16,3 +16,4 @@ COPY ./.gitconfig /home/node/.gitconfig
 
 # [Optional] Uncomment if you want to install more global node modules
 RUN su node -c "npm install -g pnpm"
+RUN git config --global --add safe.directory /workspaces/react-binary-to-decimal-calculator
