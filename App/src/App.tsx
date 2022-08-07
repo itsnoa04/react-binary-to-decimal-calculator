@@ -34,7 +34,9 @@ const App: React.FC<AppProps> = () => {
           <span className="h-5" />
           {binaryToDecimal(input_state.value)}
         </div>
+
         <InputSection
+          className="hidden md:block"
           label="DECIMAL RESULT"
           value={binaryToDecimal(input_state.value)}
         />

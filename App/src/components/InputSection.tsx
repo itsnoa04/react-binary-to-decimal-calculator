@@ -4,17 +4,21 @@ export interface InputSectionProps {
   onChange?: (value: string) => void;
   label: string;
   value: string;
+  className?: string;
 }
 
 const InputSection: React.FC<InputSectionProps> = ({
   onChange = () => {},
+  className = "",
   label,
   value,
 }) => {
   const id = useId();
   return (
     <>
-      <section className="bg-prime w-screen md:w-1/2 md:m-5 h-fit  p-10">
+      <section
+        className={`bg-prime w-screen md:w-1/2 md:m-5 h-fit  p-10 ${className}`}
+      >
         <form className="flex flex-col">
           <label className="text-prime_text" htmlFor={"input-" + id}>
             {label}
