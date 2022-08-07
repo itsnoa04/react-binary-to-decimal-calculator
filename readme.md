@@ -29,7 +29,7 @@ This is a simple application that converts binary to decimal.
 
 ## Useage 🤓
 
-### URL :
+### URL : [https://react-binary-to-decimal-calculator.vercel.app/](https://react-binary-to-decimal-calculator.vercel.app/)
 
 ### From Source
 
