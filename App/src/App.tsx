@@ -14,11 +14,11 @@ const App: React.FC<AppProps> = () => {
 
   return (
     <div className="p-10 flex flex-col min-h-full">
-      <h1 id="logo" className="text-text text-md">
+      <h1 id="logo" className="text-text text-md md:text-2xl">
         {"BIN-->DEC"}
       </h1>
 
-      <div className="absolute left-0 top-1/4">
+      <div className="absolute md:static md:flex md:w-auto md:p-20 md:flex-auto  left-0 top-1/4">
         <InputSection
           value={input_state.value}
           onChange={(value) => dispatch(updateValue(value))}
@@ -34,6 +34,10 @@ const App: React.FC<AppProps> = () => {
           <span className="h-5" />
           {binaryToDecimal(input_state.value)}
         </div>
+        <InputSection
+          label="DECIMAL RESULT"
+          value={binaryToDecimal(input_state.value)}
+        />
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const InputSection: React.FC<InputSectionProps> = ({
   const id = useId();
   return (
     <>
-      <section className="bg-prime w-screen h-fit  p-10">
+      <section className="bg-prime w-screen md:w-1/2 md:m-5 h-fit  p-10">
         <form className="flex flex-col">
           <label className="text-prime_text" htmlFor={"input-" + id}>
             {label}
